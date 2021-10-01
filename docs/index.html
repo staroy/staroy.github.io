@@ -75,6 +75,13 @@ margin: 5px 0 0 15px;
 justify-content: center;
 align-items: center;
 }
+.github-url{
+width:200px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: #006064;
+}
 .sqr{
 height: 600px;
 width: 300px;
@@ -211,7 +218,7 @@ margin: 0;
 <p>Сообщения адресно шифруются, и заверяются подписью отправителя. Хранение на диске также происходит в зашифрованном виде. Адреса хранятся в виде хэшей с солью.</p>
 <p>Для отправки каждого сообщения требуется один не потраченный токен, по прошествии определённого в конфигурации времени он освобождается, монета снова доступна для операций пользователем. Таким образом осуществляется защита от спама.</p>
 <p>PoG блокчейн реализован на протоколе cryptonote, связь между нодами может осуществляться через защищённые сети tor и i2p. Для анонимизации используется протокол Dandelion++.</p>
-<a href="https://github.com/staroy/gyro-sms" class="nav-item">https://github.com/staroy/gyro-sms</a>
+<a href="https://github.com/staroy/gyro-sms" class="github-url" target="_blank">https://github.com/staroy/gyro-sms</a>
 </div>
 <div class="box-side">
 <div class="sqr">
@@ -234,7 +241,7 @@ margin: 0;
 <p>При заморозке монет, создаётся так же уникальный 256-и мерный вектор. И с каждым новым блоком суммируется не только кумулятивный спин GYRO, но и его векторное значение. Вес альтернативной и основной веток блокчейна определяется как отношение суммы модулей векторов (GYRO) к модулю суммы векторов:<p>
 <img src="f5.png">
 <p>Из свойств векторной алгебры — числитель всегда больше знаменателя, а чем больше участников в ветке блокчейна, тем меньше знаменатель, а вес соответственно больше. Вектор генерируется случайным образом, как «Publicly Verifiable Random Beacon» (PVRB), на основе созданных последующих SPINNER_PVRB_BLOCK_WINDOW блоков, то есть определить заранее его значение, у спиннера нет возможности. Создание множества адресов с небольшими суммами не исключит честных спиннеров, которые будут забирать игнорируемые транзакции, а по прошествии SPINNER_SPIN_BLOCK_WINDOW блоков, потребуется обновлять все фиктивные транзакции заморозки, иначе монеты будут просто потеряны.</p>
-<a href="https://github.com/staroy/gyro" class="nav-item">https://github.com/staroy/gyro</a>
+<a href="https://github.com/staroy/gyro" class="github-url" target="_blank">https://github.com/staroy/gyro</a>
 </div>
 </div>
 <!--div class="content">
@@ -291,7 +298,7 @@ margin: 0;
 </main>
 <footer class="footer"  id="footer">
 <div>
-<a>Bitcoin: <b>bc1q3nqrakqnsf967qu7rpydwf32fgyypms44pgm27</b></a>
+<h3>Bitcoin: <b>bc1q3nqrakqnsf967qu7rpydwf32fgyypms44pgm27</b></h3>
 <img src="bc1q3nqrakqnsf967qu7rpydwf32fgyypms44pgm27.png"><br/>
 </div>
 </footer>
